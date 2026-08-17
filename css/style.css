@@ -868,6 +868,9 @@ address { font-style: normal; }
 }
 .press-card img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 14px 30px rgba(30, 47, 40, 0.18);
 }
@@ -933,7 +936,7 @@ address { font-style: normal; }
 
 .routes-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.2rem;
 }
 
@@ -1454,7 +1457,7 @@ select.form-input option { color: var(--forest-2); background: var(--cream); }
   margin-bottom: 2.5rem;
 }
 
-.footer-brand img { width: 200px; height: auto; margin-bottom: 1rem; }
+.footer-brand img { width: 150px; height: auto; margin-bottom: 1rem; }
 .footer-brand p { color: rgba(244, 239, 226, 0.65); font-size: 0.9rem; max-width: 34ch; }
 
 .footer-nav {

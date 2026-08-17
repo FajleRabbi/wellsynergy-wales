@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wellsynergy — Nature-Based Wellbeing across Wales | Brecon Beacons</title>
+<meta name="description" content="Wellsynergy provides calming, nature-based wellbeing experiences across Wales — guided walks, retreats, breathwork and evidence-informed health coaching with Janine Price and Chris Thomas. Personal, corporate and community wellbeing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Albert+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body class="no-js">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <svg class="preloader-compass" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+      <circle cx="60" cy="60" r="46" stroke="var(--cream)" stroke-width="2" stroke-dasharray="4 5"/>
+      <circle cx="60" cy="60" r="34" stroke="var(--amber)" stroke-width="1.5" stroke-dasharray="3 6"/>
+      <circle cx="60" cy="60" r="22" stroke="var(--cream)" stroke-width="1.5" stroke-dasharray="2 7"/>
+      <path d="M60 34 L66 60 L60 54 L54 60 Z" fill="var(--amber)"/>
+      <path d="M60 86 L54 60 L60 66 L66 60 Z" fill="var(--cream)"/>
+      <circle cx="60" cy="60" r="3" fill="var(--cream)"/>
+      <text x="60" y="24" text-anchor="middle" fill="var(--cream)" font-size="9" font-family="Space Mono, monospace">N</text>
+      <path d="M60 16 L60 10 M50 18 L44 14 M70 18 L76 14" stroke="var(--cream)" stroke-width="2"/>
+      <path d="M34 60 L28 60 M38 50 L32 44 M38 70 L32 76" stroke="var(--cream)" stroke-width="2"/>
+      <path d="M86 60 L92 60 M82 50 L88 44 M82 70 L88 76" stroke="var(--cream)" stroke-width="2"/>
+    </svg>
+    <p class="preloader-label">Wellsynergy</p>
+    <div class="preloader-track" role="progressbar" aria-label="Loading">
+      <div class="preloader-bar" id="preloader-bar"></div>
+    </div>
+    <p class="preloader-count" id="preloader-count">0%</p>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="Wellsynergy — home">
+      <img src="assets/logo.png" alt="Wellsynergy" class="brand-logo" width="220" height="40">
+    </a>
+    <nav class="nav-desktop" aria-label="Main">
+      <a href="#pathways" class="nav-link">Pathways</a>
+      <a href="#founders" class="nav-link">Founders</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#routes" class="nav-link">Walks</a>
+      <a href="#retreats" class="nav-link">Retreats</a>
+      <a href="#stories" class="nav-link">Stories</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+447974465020" class="btn btn-ghost btn-small header-phone">07974 465020</a>
+      <a href="https://janine-price-health-wellbeing.square.site/" target="_blank" rel="noopener" class="btn btn-primary btn-small header-cta">Book a Session</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav overlay (body-level, avoids header backdrop-filter bug) -->
+<nav class="nav-mobile" id="nav-mobile" aria-label="Mobile" hidden>
+  <button class="nav-close" id="nav-close" aria-label="Close menu">&times;</button>
+  <a href="#pathways" class="nav-mobile-link">Pathways</a>
+  <a href="#founders" class="nav-mobile-link">Founders</a>
+  <a href="#services" class="nav-mobile-link">Services</a>
+  <a href="#routes" class="nav-mobile-link">Walks &amp; Routes</a>
+  <a href="#retreats" class="nav-mobile-link">Retreats</a>
+  <a href="#stories" class="nav-mobile-link">Stories</a>
+  <a href="#contact" class="nav-mobile-link">Contact</a>
+  <a href="https://janine-price-health-wellbeing.square.site/" target="_blank" rel="noopener" class="btn btn-primary nav-mobile-cta">Book a Session</a>
+</nav>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Welcome to Wellsynergy">
+  <div class="hero-map" aria-hidden="true">
+    <svg class="contours" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+      <g fill="none" stroke="var(--contour-line)" stroke-width="1.5">
+        <ellipse cx="720" cy="300" rx="760" ry="420"/>
+        <ellipse cx="720" cy="300" rx="600" ry="330"/>
+        <ellipse cx="720" cy="300" rx="440" ry="245"/>
+        <ellipse cx="720" cy="300" rx="285" ry="165"/>
+        <ellipse cx="720" cy="300" rx="135" ry="85"/>
+        <ellipse cx="120" cy="780" rx="340" ry="220"/>
+        <ellipse cx="120" cy="780" rx="230" ry="150"/>
+        <ellipse cx="1360" cy="120" rx="300" ry="200"/>
+        <ellipse cx="1360" cy="120" rx="200" ry="130"/>
+      </g>
+      <g fill="none" stroke="var(--contour-line)" stroke-width="1" stroke-dasharray="6 8" opacity="0.7">
+        <path d="M0 860 C 300 780, 600 840, 900 800 S 1300 760, 1440 820"/>
+        <path d="M0 920 C 350 860, 700 900, 1000 870 S 1300 830, 1440 880"/>
+      </g>
+      <g stroke="var(--amber)" stroke-width="2.5" fill="none" stroke-dasharray="10 10">
+        <path d="M80 620 C 320 580, 560 640, 760 560 S 1180 440, 1360 500"/>
+      </g>
+      <g fill="var(--forest)">
+        <circle cx="80" cy="620" r="7"/><circle cx="760" cy="560" r="7"/><circle cx="1360" cy="500" r="7"/>
+      </g>
+      <text x="96" y="592" fill="var(--forest)" font-size="11" font-family="Space Mono, monospace">START · BRE0N</text>
+      <text x="776" y="540" fill="var(--forest)" font-size="11" font-family="Space Mono, monospace">CAMPSITE · FFOREST</text>
+      <text x="1310" y="480" fill="var(--forest)" font-size="11" font-family="Space Mono, monospace">SUMMIT</text>
+    </svg>
+    <div class="hero-grid" aria-hidden="true"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="eyebrow-coord">SN 000 000</span> BRECON BEACONS · MID WALES · NATURE-BASED WELLBEING</p>
+      <h1 class="hero-title">
+        <span class="line"><span class="line-inner">Wellbeing,</span></span>
+        <span class="line"><span class="line-inner">your <em>way.</em></span></span>
+      </h1>
+      <p class="hero-sub">Two pathways to wellbeing — personalised and corporate support through <strong>Wellsynergy Ltd</strong>, and community wellbeing through <strong>The Wellsynergy Project CIC</strong>. Guided walks, retreats and evidence-informed coaching across Wales.</p>
+      <div class="hero-ctas">
+        <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
+        <a href="https://janine-price-health-wellbeing.square.site/" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Book a Session</a>
+      </div>
+      <ul class="trust" aria-label="Trust badges">
+        <li>PCI Accredited &amp; UKIHCA Approved</li>
+        <li>Mountain Leader Guided</li>
+        <li>20+ Years Combined Experience</li>
+        <li>Private · Corporate · Community</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual" aria-label="Wellsynergy founders">
+      <div class="map-frame">
+        <img src="assets/founders.jpg" alt="Janine Price and Chris Thomas, founders of Wellsynergy" width="700" height="467" loading="eager">
+        <span class="frame-corner corner-tl" aria-hidden="true"></span>
+        <span class="frame-corner corner-tr" aria-hidden="true"></span>
+        <span class="frame-corner corner-bl" aria-hidden="true"></span>
+        <span class="frame-corner corner-br" aria-hidden="true"></span>
+        <svg class="route-line" viewBox="0 0 700 467" aria-hidden="true">
+          <path d="M60 400 C 200 360, 320 420, 460 340 S 620 260, 660 120" stroke="var(--amber)" stroke-width="3" stroke-dasharray="10 10" fill="none"/>
+          <circle cx="60" cy="400" r="8" fill="var(--cream)" stroke="var(--amber)" stroke-width="3"/>
+          <circle cx="660" cy="120" r="8" fill="var(--amber)"/>
+        </svg>
+      </div>
+      <div class="float-chip chip-a"><span class="chip-dot" aria-hidden="true"></span> WP-01 · Two Pathways</div>
+      <div class="float-chip chip-b"><span class="chip-dot" aria-hidden="true"></span> WP-02 · Evidence-Informed</div>
+      <div class="float-chip chip-c"><span class="chip-dot" aria-hidden="true"></span> WP-03 · Nature Led</div>
+      <svg class="compass" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" stroke="var(--moss)" stroke-width="1.5" fill="none"/>
+        <circle cx="50" cy="50" r="30" stroke="var(--moss)" stroke-width="1" fill="none" stroke-dasharray="3 5"/>
+        <path d="M50 16 L57 50 L50 43 L43 50 Z" fill="var(--forest)"/>
+        <path d="M50 84 L43 50 L50 57 L57 50 Z" fill="var(--amber)"/>
+        <circle cx="50" cy="50" r="3" fill="var(--forest)"/>
+        <text x="50" y="10" text-anchor="middle" fill="var(--forest)" font-size="10" font-family="Space Mono, monospace">N</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-footer" aria-hidden="true">
+    <span>GRID REF · SN 000 000</span>
+    <span>ALT 360M · BRECON BEACONS NP</span>
+    <span>51.8840° N · 3.4328° W</span>
+  </div>
+</section>
+
+<!-- ============ TWO PATHWAYS ============ -->
+<section class="section pathways" id="pathways">
+  <div class="container">
+    <p class="section-eyebrow"><span class="coord">PATH 01</span> TWO PATHWAYS, ONE MISSION</p>
+    <h2 class="section-title">Wellbeing, <em>your way.</em></h2>
+    <p class="section-sub">Wellsynergy works through two clearly separated arms — so support is ethical, transparent and true to its purpose, whether you're an individual, a workplace or a community.</p>
+
+    <div class="pathway-grid">
+      <article class="pathway-card reveal">
+        <div class="pathway-top">
+          <span class="waypoint">WP-01</span>
+          <span class="pathway-tag">PRIVATE &amp; CORPORATE</span>
+        </div>
+        <h3 class="pathway-name">Wellsynergy <span>Ltd</span></h3>
+        <p class="pathway-desc">Calming, nature-based wellbeing experiences across Wales — guided walks, retreats and outdoor sessions that help people unwind, reconnect and feel grounded. Personalised support at your pace, no quick fixes.</p>
+        <ul class="pathway-list">
+          <li>Personalised support, at your pace — no quick fixes</li>
+          <li>Ethical, evidence-informed wellbeing for individuals and workplaces</li>
+          <li>Tailored support for real lives, real pressures</li>
+          <li>Confidential, supportive and designed around you</li>
+        </ul>
+        <a href="#services" class="btn btn-primary btn-small">Explore Personal &amp; Corporate Support</a>
+      </article>
+
+      <article class="pathway-card card-cic reveal">
+        <div class="pathway-top">
+          <span class="waypoint">WP-02</span>
+          <span class="pathway-tag">COMMUNITY · CIC</span>
+        </div>
+        <h3 class="pathway-name">The Wellsynergy <span>Project CIC</span></h3>
+        <p class="pathway-desc">A Wales-wide social enterprise offering accessible wellbeing and nature connection programmes that support people, strengthen communities and care for the environment.</p>
+        <ul class="pathway-list">
+          <li>Free and accessible wellbeing support for communities</li>
+          <li>Inclusive programmes focused on prevention and connection</li>
+          <li>Open to all abilities and backgrounds</li>
+          <li>Confidential &amp; supportive</li>
+        </ul>
+        <a href="https://wellsynergyproject.wales/" target="_blank" rel="noopener" class="btn btn-outline btn-small">Explore Community Focused Wellbeing</a>
+      </article>
+    </div>
+
+    <div class="bridge reveal">
+      <svg class="bridge-icon" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M8 40 C 18 30, 26 30, 32 40 S 46 50, 56 40" stroke="var(--amber)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="8" cy="42" r="4" fill="var(--forest)"/>
+        <circle cx="56" cy="42" r="4" fill="var(--forest)"/>
+        <path d="M32 40 L32 22 M28 28 L32 22 L36 28" stroke="var(--forest)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>We believe true wellbeing comes from <strong>synergy</strong> — between science and nature, body and mind, movement and rest.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section class="section mission" id="mission">
+  <div class="container">
+    <div class="mission-inner reveal">
+      <p class="section-eyebrow light"><span class="coord">MISSION</span> WHY WE EXIST</p>
+      <h2 class="section-title light">The healing power of <em>nature</em>, guided by <em>science.</em></h2>
+      <blockquote class="mission-quote">"To empower individuals to take control of their health through evidence-based tools, compassionate support, and the healing power of nature."</blockquote>
+      <ul class="mission-pillars">
+        <li>Grounded in science</li>
+        <li>Rooted in compassion</li>
+        <li>Shaped by real life, not perfection</li>
+      </ul>
+      <div class="mission-lines" aria-hidden="true">
+        <svg viewBox="0 0 900 60" preserveAspectRatio="none">
+          <path d="M0 30 C 150 10, 300 50, 450 30 S 750 10, 900 30" stroke="rgba(244,239,226,0.25)" stroke-width="2" fill="none"/>
+          <path d="M0 45 C 200 25, 400 65, 600 45 S 800 25, 900 45" stroke="rgba(244,239,226,0.14)" stroke-width="1.5" fill="none" stroke-dasharray="6 8"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDERS ============ -->
+<section class="section founders" id="founders">
+  <div class="container">
+    <p class="section-eyebrow"><span class="coord">BASE CAMP</span> MEET THE FOUNDERS</p>
+    <h2 class="section-title">Two people, <em>one synergy.</em></h2>
+    <p class="section-sub">Janine and Chris saw a gap — people were turning to clinical solutions without lifestyle support, or exploring wellness without real evidence or structure. Wellsynergy bridges the two.</p>
+
+    <div class="founders-grid">
+      <article class="founder-card reveal">
+        <div class="founder-head">
+          <img src="assets/hero-walk.jpg" alt="Janine Price, co-founder and health &amp; wellbeing coach" width="450" height="479" loading="lazy">
+          <div class="founder-meta">
+            <h3>Janine Price</h3>
+            <p class="founder-role">Co-Founder · Health &amp; Wellbeing Coach</p>
+          </div>
+        </div>
+        <div class="founder-body">
+          <p class="founder-quals">PCI Accredited &amp; UKIHCA Approved Health &amp; Wellbeing Coach · Goal Mapping Coach · Breathwork, Mindfulness &amp; Meditation Coach</p>
+          <ul class="founder-what">
+            <li>Weight management &amp; body composition — personalised plans using InBody testing</li>
+            <li>Lifestyle &amp; wellness coaching — guided by experience and evidence</li>
+            <li>Goal mapping coaching — clear, achievable health goals</li>
+            <li>Couch to 5K / running fitness — Welsh Athletics leader</li>
+            <li>Breathwork, mindfulness &amp; meditation — tools to manage stress</li>
+          </ul>
+          <blockquote class="mini-quote">"Small steps, honest conversations and finding what works for you."</blockquote>
+        </div>
+      </article>
+
+      <article class="founder-card reveal">
+        <div class="founder-head">
+          <img src="assets/chris.jpg" alt="Chris Thomas, co-founder, mountain leader and wellbeing facilitator" width="450" height="337" loading="lazy">
+          <div class="founder-meta">
+            <h3>Chris Thomas</h3>
+            <p class="founder-role">Co-Founder · Outdoor Guide &amp; Wellbeing Facilitator</p>
+          </div>
+        </div>
+        <div class="founder-body">
+          <p class="founder-quals">Qualified Mountain Leader · Founder of ROC Adventure · Two decades leading groups in mountains, coast and wild Welsh terrain.</p>
+          <ul class="founder-what">
+            <li>Outdoor activities &amp; leadership coaching through experience</li>
+            <li>Inclusive walks for all abilities</li>
+            <li>Corporate and team event planning</li>
+            <li>Gentle wellbeing walks to wilderness retreats</li>
+            <li>Calm, grounded facilitation of group growth</li>
+          </ul>
+          <blockquote class="mini-quote">"We heal when we slow down and listen to ourselves — and to the world around us."</blockquote>
+        </div>
+      </article>
+    </div>
+
+    <div class="founders-strip reveal">
+      <div class="stat"><strong>20+</strong><span>years combined experience</span></div>
+      <div class="stat"><strong>2</strong><span>pathways — Ltd &amp; CIC</span></div>
+      <div class="stat"><strong>100%</strong><span>nature &amp; evidence informed</span></div>
+      <div class="stat"><strong>3</strong><span>wellbeing locations in Wales</span></div>
+    </div>
+
+    <div class="press-card reveal">
+      <img src="assets/chat-magazine.png" alt="Chat magazine patient casebook feature on Janine Price" width="400" height="500" loading="lazy">
+      <div class="press-body">
+        <p class="press-kicker">AS FEATURED IN CHAT MAGAZINE · PATIENT CASEBOOK</p>
+        <blockquote class="mini-quote">"I cured my symptoms from the inside out."</blockquote>
+        <p class="press-copy">Chat magazine told Janine's story — years of psoriasis and psoriatic arthritis, medication that didn't fit her life, then a switch to natural, evidence-based approaches that changed everything. It's the same method she now brings to every Wellsynergy client: start where you are, listen to your body, build habits that last.</p>
+        <p class="press-copy small">Janine Price, 49, Sennybridge — chat magazine "I cured my symptoms from the inside out"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="container">
+    <p class="section-eyebrow"><span class="coord">WAYPOINTS</span> WHAT WE OFFER</p>
+    <h2 class="section-title">Six waypoints on your <em>wellbeing map.</em></h2>
+    <p class="section-sub">Personalised support, at your pace — no quick fixes. Ethical, evidence-informed wellbeing for real lives and real pressures.</p>
+
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-top">
+          <span class="waypoint">WP-01</span>
+          <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M8 36 C 14 26, 22 26, 26 36 S 34 46, 40 38" stroke="var(--forest)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="8" cy="38" r="3.5" fill="var(--amber)"/>
+            <circle cx="40" cy="38" r="3.5" fill="var(--amber)"/>
+            <path d="M24 36 L24 12 M20 18 L24 12 L28 18" stroke="var(--forest)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Guided Wellbeing Walks</h3>
+        <p>Guided outdoor walks that combine gentle movement, mindfulness and reflective practice — reducing stress, enhancing collaboration and boosting productivity. Flexible and engaging for teams and individuals.</p>
+        <a href="#routes" class="text-link">See favourite routes <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-top">
+          <span class="waypoint">WP-02</span>
+          <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="16" stroke="var(--forest)" stroke-width="2.5" fill="none"/>
+            <circle cx="24" cy="24" r="10" stroke="var(--forest)" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+            <circle cx="24" cy="24" r="4" fill="var(--amber)"/>
+          </svg>
+        </div>
+        <h3>Weight Management &amp; Healthy Lifestyle</h3>
+        <p>Using body composition analysis (InBody) and personalised guidance, we help you understand your body and make small, achievable changes — looking at movement, habits, mindset, sleep and lifestyle.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-top">
+          <span class="waypoint">WP-03</span>
+          <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 6 L28 18 L40 20 L30 28 L33 40 L24 33 L15 40 L18 28 L8 20 L20 18 Z" stroke="var(--forest)" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Personal Goal Setting &amp; Lifestyle Planning</h3>
+        <p>A supportive space to reflect on where you are now and what you'd like to achieve — health, lifestyle, work or balance. Clear, realistic goals with small, practical steps to move forward with confidence.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-top">
+          <span class="waypoint">WP-04</span>
+          <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 40 C 24 28, 12 28, 12 18 C 12 12, 18 8, 24 14 C 30 8, 36 12, 36 18 C 36 28, 24 28, 24 40 Z" stroke="var(--forest)" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Breathwork, Mindfulness &amp; Meditation</h3>
+        <p>Simple practices that create profound shifts. Guided sessions to slow down, reconnect with your breath and build practical tools to manage stress, improve focus and nurture overall wellbeing.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-top">
+          <span class="waypoint">WP-05</span>
+          <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 10 L30 22 L42 24 L32 34 L35 46 L24 39 L13 46 L16 34 L6 24 L18 22 Z" stroke="var(--forest)" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+            <path d="M24 17 L28 25 L36 26 L29 32 L31 40 L24 35 L17 40 L19 32 L12 26 L20 25 Z" stroke="var(--forest)" stroke-width="1.5" fill="none" stroke-linejoin="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Wellbeing Retreats &amp; Workshops</h3>
+        <p>Supportive spaces to pause, reflect and reset — set in beautiful locations, combining nature, gentle movement, mindfulness and practical wellbeing tools that support long-term health.</p>
+        <a href="#retreats" class="text-link">Explore retreats <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-top">
+          <span class="waypoint">WP-06</span>
+          <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <rect x="6" y="14" width="36" height="22" rx="4" stroke="var(--forest)" stroke-width="2.5" fill="none"/>
+            <path d="M6 20 L24 28 L42 20" stroke="var(--forest)" stroke-width="2.5" fill="none"/>
+            <path d="M14 40 L20 36 L20 44 Z M34 40 L28 36 L28 44 Z" fill="var(--amber)"/>
+          </svg>
+        </div>
+        <h3>Wellbeing Packages</h3>
+        <p>Tailored wellbeing programmes for individuals and organisations — practical, personalised and results-focused, designed to improve personal health, enhance workplace wellbeing and build sustainable habits.</p>
+        <a href="#contact" class="text-link">Enquire about a package <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROUTES / WALKS ============ -->
+<section class="section routes" id="routes">
+  <div class="container">
+    <p class="section-eyebrow"><span class="coord">TRAILHEADS</span> WALKS &amp; ROUTES</p>
+    <h2 class="section-title">Some of our <em>favourite routes.</em></h2>
+    <p class="section-sub">From gentle reservoirs to iconic summits across the Brecon Beacons and beyond — every walk is an invitation to slow down and listen.</p>
+
+    <div class="routes-grid">
+      <figure class="route-card wide reveal">
+        <img src="assets/walk-1.jpg" alt="Upland route near Trefil in the Brecon Beacons" width="1400" height="1050" loading="lazy">
+        <figcaption><span class="waypoint">R-01</span> Trefil · upland moorland</figcaption>
+      </figure>
+      <figure class="route-card reveal">
+        <img src="assets/walk-talybont.jpg" alt="Talybont Reservoir, a Wellsynergy walking route" width="1400" height="1050" loading="lazy">
+        <figcaption><span class="waypoint">R-02</span> Talybont Reservoir</figcaption>
+      </figure>
+      <figure class="route-card reveal">
+        <img src="assets/walk-sugarloaf.jpg" alt="View from Sugarloaf Mountain in the Black Mountains" width="768" height="1024" loading="lazy">
+        <figcaption><span class="waypoint">R-03</span> Sugarloaf</figcaption>
+      </figure>
+      <figure class="route-card reveal">
+        <img src="assets/walk-llangorse.jpg" alt="Mynydd Llangorse ridge walk" width="1400" height="1050" loading="lazy">
+        <figcaption><span class="waypoint">R-04</span> Mynydd Llangorse</figcaption>
+      </figure>
+      <figure class="route-card reveal">
+        <img src="assets/walk-llangynidr.jpg" alt="Woodland walk at Llangynidr" width="1000" height="750" loading="lazy">
+        <figcaption><span class="waypoint">R-05</span> Llangynidr</figcaption>
+      </figure>
+      <figure class="route-card reveal">
+        <img src="assets/walk-foxhunter.jpg" alt="Foxhunter to Blorenge walking route" width="1400" height="1050" loading="lazy">
+        <figcaption><span class="waypoint">R-06</span> Foxhunter → Blorenge</figcaption>
+      </figure>
+    </div>
+
+    <div class="routes-note reveal">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 4 L24 16 L36 20 L24 24 L20 36 L16 24 L4 20 L16 16 Z" stroke="var(--moss)" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+      </svg>
+      <p>Want to walk with us? Guided walks are tailored to your group, ability and pace — <a href="#contact" class="text-link">get in touch</a> to plan your route.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RETREATS ============ -->
+<section class="section retreats" id="retreats">
+  <div class="container">
+    <p class="section-eyebrow light"><span class="coord">EXPEDITION</span> RETREATS &amp; WORKSHOPS</p>
+    <h2 class="section-title light">Step off the path. <em>Rest here.</em></h2>
+    <p class="section-sub light">Retreats and workshops that offer time to pause, reflect and reset — in the wild beauty of Wales.</p>
+
+    <article class="retreat-feature reveal">
+      <div class="retreat-media">
+        <img src="assets/retreat-fforest.jpg" alt="Wellsynergy Retreat at Fforest Barn, Black Mountains" width="1400" height="729" loading="lazy">
+        <span class="retreat-badge">4 DAYS · BLACK MOUNTAINS</span>
+        <svg class="retreat-rings" viewBox="0 0 600 320" aria-hidden="true">
+          <circle cx="300" cy="160" r="140" stroke="rgba(244,239,226,0.35)" stroke-width="1.5" fill="none" stroke-dasharray="6 8"/>
+          <circle cx="300" cy="160" r="110" stroke="rgba(244,239,226,0.25)" stroke-width="1.5" fill="none" stroke-dasharray="4 8"/>
+          <circle cx="300" cy="160" r="80" stroke="rgba(244,239,226,0.18)" stroke-width="1.5" fill="none" stroke-dasharray="3 7"/>
+        </svg>
+      </div>
+      <div class="retreat-body">
+        <h3>Wellsynergy Retreat at <em>Fforest Barn</em></h3>
+        <p class="retreat-tagline">Grounding · Nature Connection · Simplicity · Self-Care</p>
+        <p>An immersive 4-day wellness experience in the heart of the Black Mountains. Mindful movement, delicious food, heartfelt connection and nature-based practices to help you realign, recharge and thrive.</p>
+        <ul class="retreat-highlights">
+          <li>Guided hikes in the Brecon Beacons</li>
+          <li>Morning yoga &amp; gentle movement</li>
+          <li>Cold water dipping &amp; breathwork</li>
+          <li>Stargazing, fire circles &amp; free time</li>
+          <li>Wholesome meals throughout</li>
+          <li>Expert facilitation throughout</li>
+        </ul>
+        <div class="retreat-pricing">
+          <div class="price-card">
+            <span class="price-label">Under the Stars</span>
+            <strong>£495</strong>
+            <small>cosy glamping in bell tents, eco pods &amp; shepherds huts</small>
+          </div>
+          <div class="price-card featured">
+            <span class="price-label">Under the Roof</span>
+            <strong>£595</strong>
+            <small>luxury rooms in the main house, rustic charm, shared facilities</small>
+          </div>
+        </div>
+        <p class="retreat-note">Single occupancy · shared-occupancy discounts available on request.</p>
+        <div class="retreat-actions">
+          <a href="https://checkout.square.site/merchant/MLTQ2QTVYSR7K/checkout/554RD57PKFLYPNY4CLUSKLZJ?preview=true" target="_blank" rel="noopener" class="btn btn-primary">Book Your Place</a>
+          <a href="#contact" class="btn btn-ghost-light">Ask a Question</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="retreat-sub-grid">
+      <article class="retreat-card reveal">
+        <img src="assets/retreat-crai.jpg" alt="Wellsynergy Retreat Onnenfawr, Crai valley, Brecon Beacons" width="563" height="563" loading="lazy">
+        <div class="retreat-card-body">
+          <span class="retreat-coming">COMING SOON</span>
+          <h3>Onnenfawr · Brecon Beacons</h3>
+          <p>4 days at the eco lodges in the Crai valley — guided nature walks, plant-based meals, creative workshops, fireside circles and starlit stillness. Contact us to be first in line.</p>
+          <a href="#contact" class="text-link light">Be the first to know <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="retreat-card reveal">
+        <img src="assets/retreat-yoga.jpg" alt="Wellsynergy wellbeing workshop in session" width="1400" height="658" loading="lazy">
+        <div class="retreat-card-body">
+          <span class="retreat-coming">IN-PERSON OR ONLINE</span>
+          <h3>Wellbeing Workshops</h3>
+          <p>One to three-hour sessions designed to empower and educate — for teams and groups.</p>
+          <ul class="workshop-topics">
+            <li>Eating for Energy</li>
+            <li>Body Composition 101</li>
+            <li>Weight Loss Without Diet Culture</li>
+            <li>The Mind–Body–Nature Connection</li>
+            <li>Women's Health and Hormones</li>
+          </ul>
+          <a href="#contact" class="text-link light">Enquire about a workshop <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCIENCE / INBODY ============ -->
+<section class="section science" id="science">
+  <div class="container">
+    <div class="science-inner">
+      <div class="science-media reveal">
+        <img src="assets/janine-inbody.jpg" alt="InBody 270 body composition analysis at Wellsynergy" width="900" height="958" loading="lazy">
+        <span class="science-caption">INBODY 270 · ON SITE ANALYSIS</span>
+      </div>
+      <div class="science-copy reveal">
+        <p class="section-eyebrow"><span class="coord">SCIENCE</span> LOOK BEYOND THE SCALE</p>
+        <h2 class="section-title">Same height. Same weight. <em>Different story.</em></h2>
+        <p>Two people can weigh the same and share a BMI — yet have completely different body compositions. Body composition analysis sees beyond what the scale says, so your plan can be built on facts, not guesswork.</p>
+        <ul class="science-points">
+          <li><span class="waypoint">01</span> Understand your body composition in minutes</li>
+          <li><span class="waypoint">02</span> Personalised plans based on real data</li>
+          <li><span class="waypoint">03</span> Move away from diets toward long-term health</li>
+        </ul>
+        <p class="science-note">Janine's work has been featured in <strong>Chat magazine</strong> — "I cured my symptoms from the inside out."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORIES / TESTIMONIALS ============ -->
+<section class="section stories" id="stories">
+  <div class="container">
+    <p class="section-eyebrow"><span class="coord">FIELD NOTES</span> WHAT PEOPLE SAY</p>
+    <h2 class="section-title">Notes from <em>the trail.</em></h2>
+    <p class="section-sub">A few words from people who have worked with Janine and walked with Wellsynergy.</p>
+
+    <div class="stories-grid">
+      <article class="story-card wide reveal">
+        <img src="assets/test-rhian.jpg" alt="Rhian Astley, former headteacher of Cwm Primary School" width="200" height="200" loading="lazy">
+        <blockquote>
+          <p>"Your idea to set up a walking/running group after school certainly helped us gain recognition… The exercise class for the elderly provided a great source of enjoyment and fulfilment. The Couch to 5k sessions gave lots of Cwm females the opportunity to improve their health and fitness."</p>
+          <footer>Rhian Astley <cite>Former Headteacher, Cwm Primary School</cite></footer>
+        </blockquote>
+      </article>
+
+      <article class="story-card reveal">
+        <img src="assets/test-dai.jpg" alt="Dai Powell, founder of Walking the Brecon Beacons" width="500" height="500" loading="lazy">
+        <blockquote>
+          <p>"In a year she turned the group around and it's now back to one of the best groups on Facebook and Instagram. Without doubt the best thing I did for myself and the group. Great person, great friend."</p>
+          <footer>Dai Powell <cite>Founder, Walking the Brecon Beacons</cite></footer>
+        </blockquote>
+      </article>
+
+      <article class="story-card reveal">
+        <img src="assets/test-louise.jpg" alt="Louise Barnacle, certified Goal Mapping practitioner" width="400" height="400" loading="lazy">
+        <blockquote>
+          <p>"For the last 3 years it has been a pleasure to help Janine with Goal Mapping. Each year she has achieved or exceeded her goals both personally and professionally. Janine is so passionate about all of her projects and has a genuine spark and joy for life."</p>
+          <footer>Louise Barnacle <cite>Certified Goal Mapping Practitioner</cite></footer>
+        </blockquote>
+      </article>
+
+      <article class="story-card reveal">
+        <img src="assets/test-sara.jpg" alt="Sara Harris MBE" width="400" height="400" loading="lazy">
+        <blockquote>
+          <p>"What I love about Janine is the style in how she approaches her business and the ability she has to help so many people from different backgrounds achieve. Remembering no two people look to gain the same from their business, Janine's simple approach truly does get the most from the people she works with."</p>
+          <footer>Sara Harris <cite>MBE</cite></footer>
+        </blockquote>
+      </article>
+
+      <article class="story-card reveal">
+        <img src="assets/test-jan.jpg" alt="Jan Oxenham, personal trainer" width="233" height="233" loading="lazy">
+        <blockquote>
+          <p>"Janine reached out to me when we went into lockdown and my income stopped overnight. We have worked together building my business with regular meetings, which have included walking meetings… She has shown me how to retail and grow my business in an easy way around my commitments."</p>
+          <footer>Jan Oxenham <cite>Personal Trainer &amp; Forever Business Owner</cite></footer>
+        </blockquote>
+      </article>
+
+      <article class="story-card reveal">
+        <img src="assets/test-lynne.jpg" alt="Lynne Allbutt, guest speaker and writer" width="400" height="400" loading="lazy">
+        <blockquote>
+          <p>"I have been a guest speaker at several events organised by Janine and have only been impressed and reassured by her fabulous organisational skills and attention to detail. It is an absolute pleasure to work with her and be able to contribute to the amazing charity work she does."</p>
+          <footer>Lynne Allbutt <cite>Guest speaker · lynneallbutt.co.uk</cite></footer>
+        </blockquote>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTNERS ============ -->
+<section class="section partners" id="partners">
+  <div class="container">
+    <p class="section-eyebrow center"><span class="coord">GRID</span> WHO WE WORK WITH</p>
+    <h2 class="section-title center">Alongside <em>great partners.</em></h2>
+    <ul class="partners-list" aria-label="Our partners">
+      <li><img src="assets/partner-visitwales.png" alt="Visit Wales" loading="lazy"></li>
+      <li><img src="assets/partner-bbcradio.png" alt="BBC Radio Wales" loading="lazy"></li>
+      <li><img src="assets/partner-inbody.png" alt="InBody" loading="lazy"></li>
+      <li><img src="assets/partner-velindre.jpg" alt="Velindre NHS Wales" loading="lazy"></li>
+      <li><img src="assets/partner-pso.jpg" alt="Psoriasis Association" loading="lazy"></li>
+      <li><img src="assets/partner-bglife.jpg" alt="BG Life" loading="lazy"></li>
+      <li><img src="assets/partner-solesisters.jpg" alt="Sole Sisters" loading="lazy"></li>
+      <li><img src="assets/partner-mountainrescue.png" alt="Mountain Rescue" loading="lazy"></li>
+      <li><img src="assets/partner-wtbb.jpg" alt="Walking the Brecon Beacons" loading="lazy"></li>
+      <li><img src="assets/partner-bluefin.png" alt="Bluefin SUP Boards" loading="lazy"></li>
+      <li><img src="assets/partner-philipjones.png" alt="Philip Jones Timber" loading="lazy"></li>
+      <li><img src="assets/partner-cradoc.png" alt="Cradoc" loading="lazy"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-copy reveal">
+        <p class="section-eyebrow light"><span class="coord">FINAL WAYPOINT</span> GET IN TOUCH</p>
+        <h2 class="section-title light">Ready to begin your <em>wellbeing journey?</em></h2>
+        <p class="contact-sub">Want to collaborate, host a workshop, or organise a corporate wellbeing day? We'd love to hear from you.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">CALL</span>
+            <a href="tel:+447974465020">07974 465020</a>
+          </li>
+          <li>
+            <span class="contact-label">EMAIL</span>
+            <a href="mailto:info@wellsynergy.wales">info@wellsynergy.wales</a>
+          </li>
+          <li>
+            <span class="contact-label">BASE</span>
+            <address>Unit 6, Brecon Enterprise Park, Brecon LD3 8BT</address>
+          </li>
+          <li>
+            <span class="contact-label">ALSO AT</span>
+            <address>1 Beaufort St, Crickhowell NP8 1BN · The Foundry, 8 Bell Lane, Brecon LD3 9EE</address>
+          </li>
+        </ul>
+
+        <div class="contact-socials">
+          <a href="https://www.facebook.com/people/Wellsynergy-Wales/61560557483824/" target="_blank" rel="noopener" class="social-chip">Facebook</a>
+          <a href="https://instagram.com/wellsynergywales" target="_blank" rel="noopener" class="social-chip">Instagram</a>
+          <a href="https://wellsynergyproject.wales/" target="_blank" rel="noopener" class="social-chip">The Wellsynergy Project</a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <form action="mailto:info@wellsynergy.wales" method="post" enctype="text/plain">
+          <label class="form-label" for="f-name">Name</label>
+          <input class="form-input" type="text" id="f-name" name="name" autocomplete="name" required>
+          <label class="form-label" for="f-email">Email</label>
+          <input class="form-input" type="email" id="f-email" name="email" autocomplete="email" required>
+          <label class="form-label" for="f-topic">I'm interested in</label>
+          <select class="form-input" id="f-topic" name="topic">
+            <option>Guided Wellbeing Walk</option>
+            <option>Weight Management / InBody</option>
+            <option>Goal Setting Coaching</option>
+            <option>Breathwork, Mindfulness &amp; Meditation</option>
+            <option>Retreat or Workshop</option>
+            <option>Corporate Wellbeing Package</option>
+            <option>The Wellsynergy Project CIC</option>
+            <option>Something else</option>
+          </select>
+          <label class="form-label" for="f-msg">Message</label>
+          <textarea class="form-input" id="f-msg" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary btn-lg form-btn">Send Message</button>
+          <p class="form-note">or book directly: <a href="https://janine-price-health-wellbeing.square.site/" target="_blank" rel="noopener">janine-price-health-wellbeing.square.site</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Wellsynergy" width="220" height="40" loading="lazy">
+      <p>Nature-based wellbeing across Wales. Personal, corporate and community support — grounded in science, inspired by nature.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#pathways">Pathways</a>
+      <a href="#founders">Founders</a>
+      <a href="#services">Services</a>
+      <a href="#routes">Walks</a>
+      <a href="#retreats">Retreats</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-meta">
+      <a href="tel:+447974465020">07974 465020</a>
+      <a href="mailto:info@wellsynergy.wales">info@wellsynergy.wales</a>
+      <a href="https://wellsynergy.wales/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+      <a href="https://wellsynergy.wales/booking-policy/" target="_blank" rel="noopener">Booking Policy</a>
+      <a href="https://wellsynergy.wales/sustainability-policy/" target="_blank" rel="noopener">Sustainability Policy</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Wellsynergy · Brecon Beacons, Wales</p>
+    <p class="footer-gridref">GRID REF · SN 000 000 · SYNERGY BETWEEN SCIENCE &amp; NATURE</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

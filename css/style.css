@@ -934,11 +934,15 @@ address { font-style: normal; }
 /* ---------- Routes ---------- */
 .routes { background: var(--paper-2); }
 
+.routes-slider { position: relative; }
+
 .routes-rail {
   display: flex;
   gap: 1.2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  touch-action: pan-x;
   padding: 0.25rem 0.5rem 1.5rem;
   margin: 0 -0.5rem;
   scrollbar-width: thin;
@@ -947,6 +951,39 @@ address { font-style: normal; }
 .routes-rail::-webkit-scrollbar { height: 8px; }
 .routes-rail::-webkit-scrollbar-track { background: transparent; }
 .routes-rail::-webkit-scrollbar-thumb { background: var(--moss); border-radius: 999px; }
+
+.rail-btn {
+  position: absolute;
+  top: 35%;
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--forest);
+  background: var(--cream);
+  color: var(--forest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, opacity 0.25s ease;
+  box-shadow: 0 10px 24px -10px rgba(30, 47, 40, 0.4);
+}
+.rail-btn:hover { background: var(--forest); color: var(--cream); transform: scale(1.08); }
+.rail-btn:disabled { opacity: 0.35; pointer-events: none; }
+.rail-btn svg { width: 20px; height: 20px; }
+.rail-prev { left: -8px; }
+.rail-next { right: -8px; }
+
+.rail-hint {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  color: var(--moss);
+  text-align: center;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+}
 
 .route-card {
   position: relative;

@@ -132,6 +132,24 @@
   window.addEventListener("resize", refresh);
   setTimeout(refresh, 3000);
 
+  /* ---------- Routes rail arrows ---------- */
+  const rail = document.querySelector(".routes-rail");
+  const prevBtn = document.querySelector(".rail-prev");
+  const nextBtn = document.querySelector(".rail-next");
+  if (rail && prevBtn && nextBtn) {
+    const card = rail.querySelector(".route-card");
+    const step = () => (card ? card.getBoundingClientRect().width + 19.2 : 380);
+    const updateBtns = () => {
+      prevBtn.disabled = rail.scrollLeft <= 2;
+      nextBtn.disabled = rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 2;
+    };
+    prevBtn.addEventListener("click", () => rail.scrollBy({ left: -step(), behavior: "smooth" }));
+    nextBtn.addEventListener("click", () => rail.scrollBy({ left: step(), behavior: "smooth" }));
+    rail.addEventListener("scroll", updateBtns, { passive: true });
+    window.addEventListener("load", updateBtns);
+    updateBtns();
+  }
+
   /* ---------- Header shadow on scroll ---------- */
   const header = document.getElementById("header");
   const onScroll = () => {

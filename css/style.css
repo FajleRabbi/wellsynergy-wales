@@ -947,7 +947,17 @@ address { font-style: normal; }
   margin: 0 -0.5rem;
   scrollbar-width: thin;
   scrollbar-color: var(--moss) transparent;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
 }
+.routes-rail.dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.routes-rail.dragging img { pointer-events: none; }
+.routes-rail img { -webkit-user-drag: none; user-select: none; }
 .routes-rail::-webkit-scrollbar { height: 8px; }
 .routes-rail::-webkit-scrollbar-track { background: transparent; }
 .routes-rail::-webkit-scrollbar-thumb { background: var(--moss); border-radius: 999px; }

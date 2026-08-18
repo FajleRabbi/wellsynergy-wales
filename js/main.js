@@ -150,6 +150,36 @@
     updateBtns();
   }
 
+  /* ---------- Mouse drag to scroll the rail ---------- */
+  if (rail && window.PointerEvent) {
+    let isDown = false, startX = 0, startLeft = 0, dragged = false;
+    rail.addEventListener("pointerdown", (e) => {
+      isDown = true;
+      dragged = false;
+      startX = e.clientX;
+      startLeft = rail.scrollLeft;
+      rail.classList.add("dragging");
+      rail.setPointerCapture(e.pointerId);
+    });
+    rail.addEventListener("pointermove", (e) => {
+      if (!isDown) return;
+      const dx = e.clientX - startX;
+      if (Math.abs(dx) > 4) dragged = true;
+      rail.scrollLeft = startLeft - dx;
+    });
+    const endDrag = (e) => {
+      if (!isDown) return;
+      isDown = false;
+      rail.classList.remove("dragging");
+      try { rail.releasePointerCapture(e.pointerId); } catch (_) {}
+    };
+    rail.addEventListener("pointerup", endDrag);
+    rail.addEventListener("pointercancel", endDrag);
+    rail.addEventListener("click", (e) => {
+      if (dragged) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
+  }
+
   /* ---------- Header shadow on scroll ---------- */
   const header = document.getElementById("header");
   const onScroll = () => {

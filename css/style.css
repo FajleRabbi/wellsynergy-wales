@@ -934,14 +934,24 @@ address { font-style: normal; }
 /* ---------- Routes ---------- */
 .routes { background: var(--paper-2); }
 
-.routes-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.routes-rail {
+  display: flex;
   gap: 1.2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0.25rem 0.5rem 1.5rem;
+  margin: 0 -0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--moss) transparent;
 }
+.routes-rail::-webkit-scrollbar { height: 8px; }
+.routes-rail::-webkit-scrollbar-track { background: transparent; }
+.routes-rail::-webkit-scrollbar-thumb { background: var(--moss); border-radius: 999px; }
 
 .route-card {
   position: relative;
+  flex: 0 0 clamp(280px, 30vw, 360px);
+  scroll-snap-align: start;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--line);
@@ -950,8 +960,6 @@ address { font-style: normal; }
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .route-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-
-.route-card.wide { grid-column: span 2; }
 
 .route-card.cta {
   display: flex;
@@ -1514,7 +1522,6 @@ select.form-input option { color: var(--forest-2); background: var(--cream); }
   .hero-visual { max-width: 560px; margin-inline: auto; width: 100%; }
 
   .services-grid { grid-template-columns: 1fr 1fr; }
-  .routes-grid { grid-template-columns: 1fr 1fr; }
 
   .science-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .science-media { max-width: 480px; margin-inline: auto; }
@@ -1539,8 +1546,6 @@ select.form-input option { color: var(--forest-2); background: var(--cream); }
 @media (max-width: 640px) {
   .brand-logo { height: 44px; }
   .services-grid { grid-template-columns: 1fr; }
-  .routes-grid { grid-template-columns: 1fr; }
-  .route-card.wide { grid-column: span 1; }
   .partners-list { grid-template-columns: repeat(3, 1fr); }
   .retreat-highlights { grid-template-columns: 1fr; }
   .retreat-pricing { grid-template-columns: 1fr; }

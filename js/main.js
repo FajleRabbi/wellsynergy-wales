@@ -126,6 +126,12 @@
     );
   });
 
+  /* ---------- Re-measure triggers after every asset loads ---------- */
+  const refresh = () => ScrollTrigger.refresh();
+  window.addEventListener("load", refresh);
+  window.addEventListener("resize", refresh);
+  setTimeout(refresh, 3000);
+
   /* ---------- Header shadow on scroll ---------- */
   const header = document.getElementById("header");
   const onScroll = () => {
